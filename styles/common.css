@@ -49,6 +49,7 @@
 #wrap .bg .container .sponsor_btn
 {
     background: linear-gradient(90deg, var(--color-orange2),var(--color-orange));
+    color: var(--color-white);
     width: 409px; height: 71px;
     border-radius: 50px; font-size: var(--text-desk-spon_btn34);
     font-weight: var(--weight-bold);

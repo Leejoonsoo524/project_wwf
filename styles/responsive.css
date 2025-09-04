@@ -1,0 +1,116 @@
+/*******************태블릿 */
+@media screen and (max-width:1250px)
+{
+    /**********************************1행 */
+    #wrap .bg .container{padding:100px 80px;}
+    #wrap .bg .container .sponsor_btn
+    {
+        font-size: var(--text-t-mobile-spon_btn22); 
+        width: 285px;height: 61px;
+    }
+    #wrap .row1 #visual .title 
+    {
+        font-size: var(--text-tablet-title50);
+    }
+    #wrap .row1 #visual .sponsor_question_btn
+    {
+        font-size: var(--text-t-mobile-spon_q20);
+        width: 339px;
+    }
+    /**********************************2행 */
+    #wrap .bg .container h2
+    {        
+        font-size: var(--text-tablet-subtitle40);        
+    }
+    #wrap .bg .container h2+p
+    {
+        font-size: var(--text-tablet-content16);        
+    }
+    #wrap .row2 #quiz .quiz_current .status 
+    {
+        width: 357px;
+    }
+    /**********************************3행 */
+
+    /**********************************4행 */
+    #wrap .row4 #yearpost p img{width: 100%;}
+    /**********************************5행 */    
+    #wrap .row5 #news .msg_cead_wrap li dl dd{font-size: var(--text-tablet-content16);}
+    #wrap .row5 #news .msg_cead_wrap li p{font-size: var(--text-tablet-content16);}
+    /* end 1250 */   
+}
+/*******************모바일 */
+@media screen and (max-width:1020px)
+{
+    #wrap .bg .container h2
+    {        
+        font-size: var(--text-mobile-subtitle25);        
+    }
+    #wrap .bg .container h2+p
+    {
+        font-size: var(--text-mobile-content14);        
+    }
+    /**********************************1행 */
+    #wrap .bg .container{padding:100px 15px;}
+    #wrap .row1 #visual .logo {width: 50px;}
+    #wrap .row1 #visual .logo a img {width: 100%;}
+
+    #wrap .bg .container .sponsor_btn
+    {
+        font-size: var(--text-t-mobile-spon_btn22); 
+        width: 285px;height: 61px;
+    }
+    #wrap .row1 #visual .title 
+    {
+        font-size: var(--text-mobile-title30);
+    }
+    #wrap .row1 #visual .sponsor_question_btn
+    {
+        font-size: var(--text-t-mobile-spon_q20);
+        width: 339px;
+        margin: 0 auto; float: none;
+
+    }
+    /**********************************2행 */
+    #wrap .row2 #quiz{ display: block; }   
+    #wrap .row2 #quiz .quiz_list h2 {width: 100%;}
+    #wrap .row2 #quiz .quiz_list #quiz_frm #quiz_answer_btn{width: 100%; margin-bottom: 30px;}
+    #wrap .row2 #quiz .quiz_current{}
+    #wrap .row2 #quiz .quiz_current .status {float: none; width: 321px; height: 166px; margin: 0 auto ;}
+    #wrap .row2 #quiz .quiz_current .status dt {font-size: var(--text-mobile-subtitle25);}
+    #wrap .row2 #quiz .quiz_current .status dd {}
+    #wrap .row2 #quiz .quiz_current .status dd em{font-size: var(--text-tablet-title50);}
+    
+    #wrap .row2 #quiz .quiz_current p{float: none; text-align: center;}
+    /**********************************3행 */
+    #wrap .row3 #storypost iframe{width: 100%;}
+    /**********************************4행 */
+    #wrap .row4 #yearpost p img{width: 100%;}
+    /**********************************5행 */        
+    #wrap .row5 #news{height: max-content;}
+    #wrap .row5 #news .msg_cead_wrap {display: block;}
+
+    #wrap .row5 #news .msg_cead_wrap li
+    {
+        margin-bottom: 15px;
+    }
+    #wrap .row5 #news .msg_cead_wrap li dl{height: 140px;}
+    #wrap .row5 #news .msg_cead_wrap li:nth-child(1) dl
+    {
+        background: url(../images/5page_sorce1.jpg) no-repeat center / cover;
+        
+    }
+    #wrap .row5 #news .msg_cead_wrap li:nth-child(2) dl
+    {
+        background: url(../images/5page_sorce2.jpg) no-repeat center / cover;
+    }
+    #wrap .row5 #news .msg_cead_wrap li:nth-child(3) dl
+    {
+        background: url(../images/5page_sorce3.jpg) no-repeat center / cover;
+    }
+
+    #wrap .row5 #news .msg_cead_wrap li dl dd{font-size: var(--text-tablet-content16);}
+    #wrap .row5 #news .msg_cead_wrap li p{font-size: var(--text-tablet-content16);}
+    #wrap .row5 #news .msg_cead_wrap li p{height: 80px;}
+    /* end 1020 */   
+}
