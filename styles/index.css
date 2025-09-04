@@ -1,0 +1,203 @@
+#wrap {}
+/******************************************************1행*/
+#wrap .row1 {background-image: url(../images/1page_bg.jpg);}
+#wrap .row1::after
+{
+    content: ''; display: block;
+    width: 100%; height: 100%;
+    background: linear-gradient(transparent,rgba(0,0,0,0.8));
+    position: absolute; left: 0; top: 0;
+    z-index:100;/* position 선택속성 */
+}
+#wrap .row1 #visual {position: relative; z-index:200;}
+#wrap .row1 #visual .logo {}
+#wrap .row1 #visual .logo a {}
+#wrap .row1 #visual .logo a img {}
+
+#wrap .row1 #visual .title 
+{
+    text-align: center;
+    font-size: var(--text-desk-title70);    
+    line-height: var(--line-130);
+    color: var(--color-white);
+    letter-spacing: var(--letter-minus2);
+    margin: 80px 0;
+}
+#wrap .row1 #visual .title em{color: var(--color-white);font-weight: var(--weight-bold);}
+
+#wrap .row1 #visual .sponsor_btn{margin: 0 auto 80px;}
+#wrap .row1 #visual .sponsor_question_btn
+{
+    width: 439px; height: 51px; background-color: var(--color-black);
+    border-radius: 30px; font-size: var(--text-desk-spon_q26);
+    display: flex; flex-flow: row nowrap; float: right;
+    justify-content: center; align-items: center; gap: 10px;
+}
+#wrap .row1 #visual .sponsor_question_btn img{}
+#wrap .row1 #visual .sponsor_question_btn span{ color: var(--color-white);}
+/******************************************************2행 퀴즈*/
+#wrap .row2 {background-image: url(../images/2page_bg.jpg);}
+#wrap .row2 #quiz
+{
+    display: grid;    
+    grid-template-columns: repeat(2, 1fr);
+    height: max-content; padding-bottom: 130px;
+}
+#wrap .row2 #quiz > *{border: 1px solid red;}
+#wrap .row2 #quiz .quiz_list {}
+#wrap .row2 #quiz .quiz_list h2
+{
+    width: 369px; color: var(--color-white);
+}
+#wrap .row2 #quiz .quiz_list p
+{
+    margin: 20px 0; color: var(--color-white);
+}
+
+#wrap .row2 #quiz .quiz_list #quiz_frm .list li {margin: 10px 0;}
+#wrap .row2 #quiz .quiz_list #quiz_frm .list li #q30,
+#wrap .row2 #quiz .quiz_list #quiz_frm .list li #q40,
+#wrap .row2 #quiz .quiz_list #quiz_frm .list li #q50,
+#wrap .row2 #quiz .quiz_list #quiz_frm .list li #q60 
+{
+    display: none;    
+}
+
+#wrap .row2 #quiz .quiz_list #quiz_frm .list li input[id^=q]:checked + label
+{
+    background-image: url(../images/Checkon.png);    
+} 
+#wrap .row2 #quiz .quiz_list #quiz_frm .list li label
+{
+    background-image: url(../images/Checkoff.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding-left: 27px;    
+    line-height: 30px;    
+    display: inline-block;
+    color: var(--color-white);
+
+}
+
+#wrap .row2 #quiz .quiz_list #quiz_frm #quiz_answer_btn 
+{
+    width: 369px; height: 50px;
+    color: var(--color-white); background: var(--color-black);
+    border-radius: 30px;
+}
+
+#wrap .row2 #quiz .quiz_current {align-content: center;}
+#wrap .row2 #quiz .quiz_current .status 
+{
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    width: 457px;
+    float: right;
+}
+#wrap .row2 #quiz .quiz_current .status dt
+{
+    padding: 15px; color: var(--color-white);
+    background: var(--color-orange);
+    text-align: center;
+}
+#wrap .row2 #quiz .quiz_current .status dt img{}
+#wrap .row2 #quiz .quiz_current .status dd
+{
+    text-align: center;
+    align-content: center;
+    background: var(--color-white);
+    height: 127px;
+}
+#wrap .row2 #quiz .quiz_current .status dd em
+{    
+    font-size: var(--text-desk-subtitle55);
+    color: var(--color-orange);
+}
+#wrap .row2 #quiz .quiz_current .status dd span{color: var(--color-orange);}
+#wrap .row2 #quiz .quiz_current p{float: right; color: var(--color-white);}
+/******************************************************3행 동영상*/
+#wrap .row3{background-image: url(../images/3page_bg.jpg);}
+#wrap .row3 #storypost{display: flex; flex-flow: column nowrap; align-items: center;}
+#wrap .row3 #storypost h2{}
+#wrap .row3 #storypost iframe{width: 538px; height: 361px; margin: 20px 0;}
+#wrap .row3 #storypost .sponsor_btn{color: var(--color-white);}
+
+/******************************************************4행 빙하면적감소*/
+#wrap .row4{background-image: url(../images/4page_bg.jpg);}
+#wrap .row4 #yearpost{}
+#wrap .row4 #yearpost h2
+{
+    text-align: left;
+    color:var(--color-white);
+}
+#wrap .row4 #yearpost h2 em{position: relative;}
+#wrap .row4 #yearpost h2 em::after 
+{
+    content: ''; display: inline-block;
+    background: var(--color-white); z-index: 10;
+    position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+}
+#wrap .row4 #yearpost h2 em span
+{
+    color: var(--color-black); z-index:11; position: relative;
+    font-weight: var(--weight-semi-bold);
+}
+#wrap .row4 #yearpost h2+p {margin: 20px 0;}
+#wrap .row4 #yearpost p 
+{
+    text-align: left;
+    color:var(--color-white);
+}
+#wrap .row4 #yearpost p img{}
+/******************************************************5행 빙하가 녹으면*/
+#wrap .row5{background-color: var(--color-grayf);}
+#wrap .row5 #news{}
+#wrap .row5 #news h2
+{
+    font-size: var(--text-desk-subtitle55);
+    font-weight: var(--weight-bold);
+    margin-bottom: 60px;
+}
+#wrap .row5 #news h2+p
+{
+        text-align: center;
+        font-size: var(--text-desk-content20);
+        margin-bottom: 60px;
+
+}
+#wrap .row5 #news .msg_cead_wrap
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); gap: 20px;
+}
+#wrap .row5 #news .msg_cead_wrap li{width: 400px;}
+#wrap .row5 #news .msg_cead_wrap li:nth-child(1) dl
+{
+    background-image: url(../images/5page_sorce1.jpg);
+}
+#wrap .row5 #news .msg_cead_wrap li:nth-child(2) dl
+{
+    background-image: url(../images/5page_sorce2.jpg);
+}
+#wrap .row5 #news .msg_cead_wrap li:nth-child(3) dl
+{
+    background-image: url(../images/5page_sorce3.jpg);
+}
+
+#wrap .row5 #news .msg_cead_wrap li dl
+{
+    height: 320px; text-align: center; padding-top: 20px;    
+    position: relative;
+}
+#wrap .row5 #news .msg_cead_wrap li dl:after
+{
+    background: linear-gradient(var(--color-black), transparent);
+    content: ''; display: block;
+    position: absolute; left: 0; top: 0;
+    width: 100%; height: 100%;    
+}
+#wrap .row5 #news .msg_cead_wrap li dl dt{color: var(--color-white);}
+#wrap .row5 #news .msg_cead_wrap li dl dd{color: var(--color-white);}
+#wrap .row5 #news .msg_cead_wrap li p{padding: 20px 20px 60px; background: var(--color-grayf);}
+
